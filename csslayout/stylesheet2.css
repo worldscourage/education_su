@@ -1,0 +1,32 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  position: relative;
+}
+nav {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+  border: 2 solid green;
+}
+section {
+  /* position is static by default */
+  margin-left: 200px;
+  border: 2 dotted red;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+  border: 2 dashed blue;
+}
+body {
+	background:#CCFF00;
+  margin-bottom: 120px;
+}

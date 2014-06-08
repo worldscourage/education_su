@@ -1,0 +1,15 @@
+body{
+	background: #FFAAAA;
+}
+.alternative{
+	border:1px dotted green;
+	color:red;
+	align:right;
+}
+input[type=search] { 
+	background: url(q.jpg) right no-repeat; 
+	border: 2px solid green;
+	margin: 50 50 50 50;
+}
+input[type=email]:valid { background: green }
+input[type=email]:invalid { background: red }

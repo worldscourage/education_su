@@ -1,0 +1,53 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+div{
+	border:3 dotted black;
+}
+.box {
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 3em;
+  border: 3 solid green;
+}
+.after-box {
+  clear: both;
+  border: 3 solid gray;
+}
+.box2 {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 3em;
+  border: 3 dashed green;
+}
+nav {
+	font-size: 3em;
+  display: inline-block;
+  /*vertical-align: top;*/
+  width: 24%;
+  border: 3 solid yellow;
+}
+.column {
+	font-size: 2em;
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  border: 3 solid magenta;
+}
+section{
+	border: 2 dotted orange;
+}
+.three-column {
+	font-size:1.5em;
+  padding: 6em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 1em;
+}

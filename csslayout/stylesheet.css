@@ -1,0 +1,31 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body{
+	background: #AAFFAA;
+	margin-top: 100;
+}
+#first{
+	width:700px;
+	height: 50px;
+	max-width: 700px;
+	background: blue;
+	margin: 0 50 0 50;
+}
+#second{
+	margin: 100 0 0 0;
+	padding: 10 10 10 10;
+	height: 50px;
+	width: 200px;
+	background:red;
+}
+#third{
+	height: 50px;
+	width: 200px;
+	background:gray;
+}
+.fixed{
+	position: fixed;
+}
