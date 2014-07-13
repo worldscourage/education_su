@@ -1,0 +1,2 @@
+var m1 = require("./8m_m1.js");
+console.log(m1.mname());
