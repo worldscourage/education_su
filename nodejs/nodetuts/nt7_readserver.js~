@@ -1,0 +1,22 @@
+var net = require("net");
+var JSONStream = require("json-stream");
+
+module.exports = functoin (source){
+	server = net.createServer();
+	server.on("connection",function(socket){
+		var started = false;
+		var jsonstream = new JSONStream();
+
+		var actions = {
+			'start':function(command){if(started)return;  source.pipe(stringifier).pipe(socket); started=true;},
+			'end':function(command){},
+		};
+		jsonstream.("data",command){
+			var action = command.action;
+			if(action && actions[action]) actions[action](command);
+		}
+		socket.pipe(jsonstream);
+	});
+
+	server.listen(4001);
+};
