@@ -1,0 +1,22 @@
+// Gruntfile.js
+grunt.initConfig({
+
+	// get the configuration info from package.json ----------------------------
+    // this way we can use things like name and version (pkg.name)
+    pkg: grunt.file.readJSON('package.json'),
+
+	...
+
+	// configure uglify to minify js files -------------------------------------
+    uglify: {
+      options: {
+        banner: '/*\n <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n*/\n'
+      },
+      build: {
+        files: {
+          'dist/js/magic.min.js': 'src/js/magic.js'
+        }
+      }
+    }
+
+});
